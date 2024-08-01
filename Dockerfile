@@ -5,6 +5,6 @@ WORKDIR /home/node/app
 RUN echo "$(ls)"
 RUN npm install
 
-COPY node-webapp /home/node/app
+COPY . /home/node/app/node-webapp
 
 CMD ["npm", "start"]
